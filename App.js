@@ -10,6 +10,8 @@ import TelaPrincipal from './telas/TelaPrincipal/TelaPrincipal';
 import TELAS from './comum/constantes/telas';
 import TelaFormulario from './telas/TelaFormulario/TelaFormulario';
 
+import TelaListaTarefas from './telas/TelaListaTarefas/TelaListaTarefas';
+
 const Stack = createStackNavigator();
 
 const estilos = StyleSheet.create({
@@ -29,12 +31,13 @@ export default function App() {
           name={TELAS.TELA_PRINCIPAL}
           component={TelaPrincipal} 
           options={{
-            title: 'Tela Principal',
+            title: 'Principal',
            }}
           />
 
           <Stack.Screen name={TELAS.TELA_CONTADOR} component={TelaContador} options={{title: 'Tela Contador'}}/>
           <Stack.Screen name={TELAS.TELA_FORMULARIO} component={TelaFormulario} options={{title: 'Tela Formulário'}}/>
+          <Stack.Screen name={TELAS.TELA_LISTA_TAREFAS} component={TelaListaTarefas} options={{title: 'Lista Tarefas'}}/>
         </Stack.Navigator>
       </NavigationContainer>     
       {/* <TelaContador /> */}
