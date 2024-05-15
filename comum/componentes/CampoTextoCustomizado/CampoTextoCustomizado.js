@@ -10,8 +10,7 @@ const CampoTextoCustomizado = (props) => {
             <Text>{props.label}</Text>
             <TextInput style={campoTextoCustomizadoStyle.campoTexto} {...props}/>
         </View>
-
-    )     
-}
+    );     
+};
 
 export default CampoTextoCustomizado;

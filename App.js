@@ -25,7 +25,14 @@ export default function App() {
     <View style={estilos.todoApp}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name={TELAS.TELA_PRINCIPAL} component={TelaPrincipal} options={{title: 'Tela Principal'}} />
+          <Stack.Screen 
+          name={TELAS.TELA_PRINCIPAL}
+          component={TelaPrincipal} 
+          options={{
+            title: 'Tela Principal',
+           }}
+          />
+
           <Stack.Screen name={TELAS.TELA_CONTADOR} component={TelaContador} options={{title: 'Tela Contador'}}/>
           <Stack.Screen name={TELAS.TELA_FORMULARIO} component={TelaFormulario} options={{title: 'Tela Formulário'}}/>
         </Stack.Navigator>
